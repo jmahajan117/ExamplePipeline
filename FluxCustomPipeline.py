@@ -43,11 +43,8 @@ from diffusers.utils.torch_utils import randn_tensor
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline
 from diffusers.pipelines.flux.pipeline_output import FluxPipelineOutput
 from PIL import Image
-from agg_network.adjusted_readout.readout_network import AggregationNetwork
 import math
 
-import bitsandbytes as bnb
-import matplotlib.pyplot as plt
 import numpy as np
 
 
