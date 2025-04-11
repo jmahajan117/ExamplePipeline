@@ -196,7 +196,6 @@ class FluxCustomPipeline(
         transformer: FluxTransformer2DModel,
         image_encoder: CLIPVisionModelWithProjection = None,
         feature_extractor: CLIPImageProcessor = None,
-        agg_network: AggregationNetwork = None,
     ):
         super().__init__()
 
