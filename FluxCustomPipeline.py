@@ -960,12 +960,7 @@ class FluxCustomPipeline(
                             feats = self.transformer.features[j]['hidden'][:, 256:, :].to(self.feature_dtype)
                         else:
                             feats = torch.cat((feats, self.transformer.features[j]['hidden'][:, 256:, :].to(self.feature_dtype)), dim=0)
-                    if time_feats is None:
-                        time_feats = self.transformer.time_emb.to(self.feature_dtype)
-                    else:
-                        time_feats = torch.cat((time_feats, self.transformer.time_emb.to(self.feature_dtype)), dim=0)
                     print("feats shape: ", feats.shape)
-                    print("time_feats shape: ", time_feats.shape)
 
 
                 self.transformer.features = []
