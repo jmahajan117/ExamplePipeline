@@ -214,7 +214,6 @@ class FluxCustomPipeline(
         # print(self.scheduler.num_train_timesteps)
 
         self.feature_dtype = torch.float32
-        self.agg_network = agg_network
         self.outhead = None
 
         self.vae_scale_factor = (
